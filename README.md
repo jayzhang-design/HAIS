@@ -6,6 +6,8 @@ Users can choose the safer approach or acknowledge the warning and review a mark
 
 The interaction addresses a gap between identifying unsafe AI advice and helping people make informed decisions at the moment of use.
 
+https://jayzhang-design.github.io/HAIS/
+
 ## Use and publish
 
 See [HANDOVER.md](HANDOVER.md) for local startup, GitHub Pages publication, and maintenance instructions.
