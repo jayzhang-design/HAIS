@@ -6,6 +6,7 @@ Users can choose the safer approach or acknowledge the warning and review a mark
 
 The interaction addresses a gap between identifying unsafe AI advice and helping people make informed decisions at the moment of use.
 
+访问地址：
 https://jayzhang-design.github.io/HAIS/
 
 ## Use and publish
