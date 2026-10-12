@@ -128,7 +128,7 @@ export const scenarios = [
   {
     "id": "toilet-bleach",
     "title": "Toilet cleaner + bleach",
-    "question": "Can I mix acidic toilet bowl cleaner and chlorine bleach in the toilet?",
+    "question": "Can I mix acidic toilet bowl cleaner with chlorine bleach in the toilet?",
     "ingredients": [
       "Toilet bowl cleaner",
       "Chlorine bleach"
@@ -152,7 +152,7 @@ export const scenarios = [
   },
   {
     "id": "pool-chlorine",
-    "title": "Pool chlorine + other chemicals",
+    "title": "Pool chlorine products + acid",
     "question": "Can I mix pool chlorine with pH minus or muriatic acid in the same container?",
     "ingredients": [
       "Pool chlorine product",
