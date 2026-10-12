@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {detectRisks} from '../rules.js';
 import {scenarios} from '../scenarios.js';
 const ids=s=>detectRisks(s).map(x=>x.id);
-test('all twelve example questions route to the correct scenario',()=>{for(const s of scenarios)assert.deepEqual(ids(s.question),[s.id]);});
+test('all twenty-one example questions route to the correct scenario',()=>{for(const s of scenarios)assert.deepEqual(ids(s.question),[s.id]);});
 test('Chinese aliases and combined hazards',()=>{
 assert.deepEqual(ids('白醋和84消毒液能一起用吗'),['acid-bleach']);
 assert.deepEqual(ids('氨水和次氯酸钠混合'),['ammonia-bleach']);
@@ -56,4 +56,24 @@ for(const [input,expected] of cases)assert.deepEqual(ids(input),expected,input);
 });
 test('independent scenarios are retained across sentences',()=>{
 assert.deepEqual(ids('Mix acidic toilet bowl cleaner and bleach. Mix ammonia-based glass cleaner and bleach spray.'),['toilet-bleach','ammonia-spray']);
+});
+
+test('nine added Chinese combinations and product aliases',()=>{
+const cases=[
+['盐酸管道疏通剂和烧碱疏通剂混合','drain-mix'],
+['氢氧化钠和铝箔','alkali-aluminum'],
+['漂白剂和洗必泰','bleach-chx'],
+['84消毒液和磷化铝农药','bleach-pesticide'],
+['高锰酸钾和甘油','permanganate-glycerin'],
+['高锰酸钾和糖','permanganate-organic'],
+['碘酊和氨水','iodine-ammonia'],
+['洁厕剂和铝箔','acid-aluminum'],
+['双氧水和二氧化锰','peroxide-catalyst'],
+['Mix Drano and Liquid Fire','drain-mix'],
+['Mix two different drain cleaners','drain-mix']
+];
+for(const [input,id] of cases)assert.deepEqual(ids(input),[id],input);
+for(const input of ['drain cleaner','sodium hydroxide','aluminum foil','chlorhexidine','pesticide','potassium permanganate','glycerin','iodine','iron powder','copper powder','manganese dioxide'])assert.deepEqual(ids(input),[],input);
+assert.deepEqual(ids('Never mix iodine and ammonia.'),[]);
+assert.deepEqual(ids('Mix potassium permanganate and glycerol. Mix hydrogen peroxide and iron powder.'),['permanganate-glycerin','peroxide-catalyst']);
 });

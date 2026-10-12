@@ -303,5 +303,230 @@ export const scenarios = [
     ],
     "flagged": "The flagged recommendation involved using ammonia-based and bleach-based sprays together in the same area.",
     "number": 12
+  },
+  {
+    "id": "drain-mix",
+    "title": "Different drain cleaners",
+    "question": "Can I mix sulfuric acid drain cleaner with caustic soda drain opener?",
+    "ingredients": [
+      "Acidic drain cleaner",
+      "Alkaline drain cleaner"
+    ],
+    "chemicals": [
+      "Sulfuric acid / acidic formulation",
+      "Sodium hydroxide / alkaline formulation"
+    ],
+    "hazard": "Violent reaction, splashing and chemical burns",
+    "warning": "Mixing different drain cleaners can cause intense heat, violent splashing and pressure. Acidic and alkaline formulations are incompatible. Never combine or layer different drain products.",
+    "alternative": "Use one labeled product. If it fails, stop adding chemicals and ask a qualified plumber. Tell them which chemicals are already in the drain.",
+    "intro": "Here’s a safer approach:",
+    "steps": [
+      "Avoid adding a second cleaner or trying to neutralize the first.",
+      "Do not plunge or snake a drain while corrosive cleaner remains; splashing can cause burns.",
+      "Use mechanical clearing methods only when the drain is free of chemical cleaner and it is safe to do so.",
+      "If the blockage persists, contact a professional and identify the products used."
+    ],
+    "flagged": "The flagged recommendation involved different drain cleaners.",
+    "number": 13
+  },
+  {
+    "id": "alkali-aluminum",
+    "title": "Alkaline drain cleaner + aluminum",
+    "question": "Can I use sodium hydroxide drain cleaner with aluminum foil?",
+    "ingredients": [
+      "Alkaline drain cleaner",
+      "Aluminum"
+    ],
+    "chemicals": [
+      "Sodium hydroxide / lye",
+      "Aluminum foil / pipe"
+    ],
+    "hazard": "Flammable hydrogen gas; fire or explosion",
+    "warning": "Sodium hydroxide can react with aluminum and release flammable hydrogen. Gas buildup, especially in a confined space, can create a fire or explosion hazard. A generic drain-cleaner name does not confirm its ingredients.",
+    "alternative": "Keep alkaline cleaners away from aluminum foil, containers and incompatible pipes. Use only equipment approved by the product label.",
+    "intro": "Here’s a safer approach:",
+    "steps": [
+      "Check the cleaner label and plumbing material before use.",
+      "Do not cover treated drains with aluminum foil or use an aluminum container.",
+      "Choose tools compatible with the specific product; do not assume every plastic is suitable.",
+      "If materials have already reacted, leave the area, avoid ignition sources without operating nearby switches, and seek professional emergency advice."
+    ],
+    "flagged": "The flagged recommendation involved alkaline drain cleaner + aluminum.",
+    "number": 14
+  },
+  {
+    "id": "bleach-chx",
+    "title": "Bleach + chlorhexidine",
+    "question": "Can I combine bleach with chlorhexidine antiseptic?",
+    "ingredients": [
+      "Chlorine bleach",
+      "Chlorhexidine"
+    ],
+    "chemicals": [
+      "Sodium hypochlorite",
+      "CHX / antiseptic formulation"
+    ],
+    "hazard": "Precipitate and potentially harmful reaction products",
+    "warning": "Sodium hypochlorite and chlorhexidine can form a precipitate. Studies report adverse effects and debate the exact byproducts. Do not combine these agents or assume the mixture is suitable for disinfection.",
+    "alternative": "Choose one appropriate disinfectant. Clinical use must follow the applicable professional protocol.",
+    "intro": "Here’s a safer approach:",
+    "steps": [
+      "Use only a disinfectant approved for the intended task.",
+      "Do not mix bleach with chlorhexidine or surgical antiseptics.",
+      "For clinical procedures, follow professional protocols rather than household cleaning guidance.",
+      "If an unintended mixture has formed, stop using it and obtain professional advice."
+    ],
+    "flagged": "The flagged recommendation involved bleach + chlorhexidine.",
+    "number": 15
+  },
+  {
+    "id": "bleach-pesticide",
+    "title": "Bleach + phosphide pesticide",
+    "question": "Can I clean aluminum phosphide pesticide residue with bleach?",
+    "ingredients": [
+      "Chlorine bleach",
+      "Pesticide / herbicide residue"
+    ],
+    "chemicals": [
+      "Aqueous sodium hypochlorite",
+      "Check for aluminum / other metal phosphides"
+    ],
+    "hazard": "Potential phosphine release from phosphide residues",
+    "warning": "Metal-phosphide pesticides can release highly toxic, flammable phosphine on contact with water or acid. Aqueous bleach must not be used on these residues. Other pesticides have different hazards; their names alone do not establish phosphine formation.",
+    "alternative": "Do not mix bleach with pesticides or use it to clean unknown pesticide residues. For phosphide contamination, do not add water; obtain specialist instructions.",
+    "intro": "Here’s a safer approach:",
+    "steps": [
+      "Check the pesticide label and safety data sheet.",
+      "Do not add bleach, water or other cleaners to suspected phosphide residues.",
+      "Leave a suspected gas-release area and keep others away.",
+      "Contact emergency responders or a hazardous-materials specialist; follow label-specific instructions rather than improvising cleanup."
+    ],
+    "flagged": "The flagged recommendation involved bleach + phosphide pesticide.",
+    "number": 16
+  },
+  {
+    "id": "permanganate-glycerin",
+    "title": "Potassium permanganate + glycerin",
+    "question": "Can I combine potassium permanganate with glycerin?",
+    "ingredients": [
+      "Potassium permanganate",
+      "Glycerin"
+    ],
+    "chemicals": [
+      "Strong oxidizer",
+      "Glycerol"
+    ],
+    "hazard": "Spontaneous ignition; fire",
+    "warning": "Potassium permanganate is a strong oxidizer. Contact with glycerin can cause a strongly exothermic reaction and ignition. Do not combine them.",
+    "alternative": "Keep the products separate and store them according to their labels and safety data sheets.",
+    "intro": "Here’s a safer approach:",
+    "steps": [
+      "Use each product only for its approved purpose.",
+      "Keep potassium permanganate away from glycerin and other combustible materials.",
+      "Prevent cross-contamination of tools, containers and storage areas.",
+      "If an unintended mixture is heating or reacting, move away and contact emergency responders."
+    ],
+    "flagged": "The flagged recommendation involved potassium permanganate + glycerin.",
+    "number": 17
+  },
+  {
+    "id": "permanganate-organic",
+    "title": "Potassium permanganate + sugar / ethanol",
+    "question": "Can I mix potassium permanganate with sugar or ethanol?",
+    "ingredients": [
+      "Potassium permanganate",
+      "Sugar / ethanol"
+    ],
+    "chemicals": [
+      "Strong oxidizer",
+      "Combustible organic material"
+    ],
+    "hazard": "Fire; potentially violent reaction",
+    "warning": "Potassium permanganate can react strongly with organic materials such as sugar and ethanol. Heat, ignition or a violent reaction can occur depending on conditions. Do not mix them.",
+    "alternative": "Keep the oxidizer separate from sugar, alcohol and other combustible materials.",
+    "intro": "Here’s a safer approach:",
+    "steps": [
+      "Follow the safety data sheet for oxidizer storage.",
+      "Use dedicated compatible equipment and avoid organic contamination.",
+      "Do not use sugar or ethanol to modify potassium permanganate products.",
+      "If an accidental reaction begins, leave the area and seek emergency assistance."
+    ],
+    "flagged": "The flagged recommendation involved potassium permanganate + sugar / ethanol.",
+    "number": 18
+  },
+  {
+    "id": "iodine-ammonia",
+    "title": "Iodine + ammonia",
+    "question": "Can I mix tincture of iodine with ammonia?",
+    "ingredients": [
+      "Iodine",
+      "Ammonia"
+    ],
+    "chemicals": [
+      "Iodine / iodine tincture",
+      "Ammonia solution"
+    ],
+    "hazard": "Potential shock-sensitive nitrogen iodide compound",
+    "warning": "Iodine and ammonia can form highly sensitive nitrogen iodide compounds. The resulting material may explode when disturbed, especially after drying. Do not mix these products or handle a suspected residue.",
+    "alternative": "Use the products separately. If they have already mixed, keep people away and contact emergency responders; do not touch, move, dry or attempt to dilute the mixture.",
+    "intro": "Here’s a safer approach:",
+    "steps": [
+      "Keep iodine products and ammonia separate.",
+      "Do not combine them for cleaning or disinfection.",
+      "If a mixture or residue already exists, do not disturb it or add water or other chemicals.",
+      "Leave the area, keep others away and obtain specialist assistance."
+    ],
+    "flagged": "The flagged recommendation involved iodine + ammonia.",
+    "number": 19
+  },
+  {
+    "id": "acid-aluminum",
+    "title": "Acid cleaner + aluminum foil",
+    "question": "Can I use hydrochloric acid toilet cleaner with aluminum foil?",
+    "ingredients": [
+      "Acid cleaner",
+      "Aluminum foil"
+    ],
+    "chemicals": [
+      "Hydrochloric acid / acidic toilet cleaner",
+      "Aluminum"
+    ],
+    "hazard": "Flammable hydrogen gas; fire or explosion",
+    "warning": "Hydrochloric acid can react with aluminum and release flammable hydrogen. Confined gas buildup can create an explosion hazard. Check toilet-cleaner ingredients rather than assuming every formulation contains acid.",
+    "alternative": "Keep acidic cleaners away from aluminum. Use only containers and tools approved for the specific product.",
+    "intro": "Here’s a safer approach:",
+    "steps": [
+      "Read the product label and check the material being cleaned.",
+      "Do not cover an acid-treated area with aluminum foil.",
+      "Use compatible equipment as directed; do not improvise a sealed container.",
+      "If an unintended reaction releases gas, leave the area and obtain professional emergency advice."
+    ],
+    "flagged": "The flagged recommendation involved acid cleaner + aluminum foil.",
+    "number": 20
+  },
+  {
+    "id": "peroxide-catalyst",
+    "title": "Hydrogen peroxide + metal powder / manganese dioxide",
+    "question": "Can I mix hydrogen peroxide with iron powder, copper powder or manganese dioxide?",
+    "ingredients": [
+      "Hydrogen peroxide",
+      "Metal powder / manganese dioxide"
+    ],
+    "chemicals": [
+      "Peroxide solution",
+      "Iron / copper / MnO₂"
+    ],
+    "hazard": "Rapid decomposition, heat and oxygen; pressure or fire",
+    "warning": "Iron, copper and manganese-containing contaminants can accelerate hydrogen peroxide decomposition, releasing heat and oxygen. Gas can build pressure in a container, and oxygen promotes combustion. Risk depends on concentration and conditions.",
+    "alternative": "Store peroxide in its original labeled container and keep it free of metal, dust and organic contamination.",
+    "intro": "Here’s a safer approach:",
+    "steps": [
+      "Use hydrogen peroxide only as directed by its label.",
+      "Keep metal powders, manganese dioxide and incompatible materials away from it.",
+      "Do not transfer used or contaminated peroxide back into the original bottle.",
+      "If peroxide is unexpectedly heating or bubbling, move away and obtain professional advice rather than handling the container."
+    ],
+    "flagged": "The flagged recommendation involved hydrogen peroxide + metal powder / manganese dioxide.",
+    "number": 21
   }
 ];

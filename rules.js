@@ -1,6 +1,17 @@
 import {scenarios} from './scenarios.js';
 // Deterministic routing with ingredient groups and specific-scenario precedence.
 const groups = {
+drain:/\b(?:drain cleaners?|drain openers?|drano|liquid fire)\b|管道(?:疏通剂|清洁剂)|疏通剂|下水道清洁剂/iu,
+alkali:/\b(?:caustic soda|sodium hydroxide|lye)\b|烧碱|火碱|氢氧化钠/iu,
+aluminum:/\b(?:aluminum|aluminium)(?: foil| pipe)?\b|铝箔|铝管|铝容器|铝/iu,
+chx:/\b(?:chlorhexidine|chx|surgical antiseptic)\b|氯己定|洗必泰|手术消毒剂/iu,
+pesticide:/\b(?:pesticides?|herbicides?|phosphide|aluminum phosphide|aluminium phosphide|zinc phosphide)\b|农药|杀虫剂|除草剂|磷化铝|磷化锌|磷化物/iu,
+permanganate:/\b(?:potassium permanganate|kmno4)\b|高锰酸钾/iu,
+glycerin:/\b(?:glycerin|glycerine|glycerol)\b|甘油|丙三醇/iu,
+sugarEthanol:/\b(?:sugar|ethanol|ethyl alcohol)\b|糖|乙醇|酒精/iu,
+iodine:/\b(?:iodine|tincture of iodine)\b|碘酊|碘/iu,
+catalyst:/\b(?:iron powder|copper powder|manganese dioxide|mno2)\b|铁粉|铜粉|二氧化锰/iu,
+
 bleach:/\b(?:chlorine bleach|bleach|sodium hypochlorite|chlorine disinfectant|chlorine spray)\b|漂白(?:剂|水)|次氯酸钠|含氯(?:消毒剂|清洁剂|喷雾)|84\s*(?:消毒液|消毒剂|disinfectant)/iu,
 vinegar:/\b(?:white vinegar|vinegar|acetic acid)\b|白醋|醋|乙酸|醋酸/iu,
 acid:/\b(?:acid(?:ic)? cleaner|acidic mold remover|hydrochloric acid|sulfuric acid|muriatic acid|pH minus)\b|酸性(?:清洁剂|洁厕剂|除霉剂)|盐酸|硫酸|降酸剂|pH\s*降低剂/iu,
@@ -48,6 +59,16 @@ if(g.bleach&&g.laundry&&(!approvedLaundry||premix))ids.push('laundry-bleach');
 if(g.bleach&&g.oxygen)ids.push('oxygen-bleach');
 if(g.dish&&g.toilet)ids.push('dish-toilet');
 if(g.bleach&&g.peroxide)ids.push('peroxide-bleach');
+const differentDrains=g.drain&&((g.acid&&g.alkali)||/\b(?:two|different|another|second) (?:types? of )?drain (?:cleaners?|openers?)\b|不同(?:类型)?(?:的)?疏通剂|两种(?:管道)?疏通剂/iu.test(s)||(/\bdrano\b/iu.test(s)&&/\bliquid fire\b/iu.test(s)));
+if(differentDrains)ids.push('drain-mix');
+if((g.alkali||g.drain)&&g.aluminum)ids.push('alkali-aluminum');
+if(g.bleach&&g.chx)ids.push('bleach-chx');
+if(g.bleach&&g.pesticide)ids.push('bleach-pesticide');
+if(g.permanganate&&g.glycerin)ids.push('permanganate-glycerin');
+if(g.permanganate&&g.sugarEthanol)ids.push('permanganate-organic');
+if(g.iodine&&g.ammonia)ids.push('iodine-ammonia');
+if((g.acid||g.toilet)&&g.aluminum)ids.push('acid-aluminum');
+if(g.peroxide&&g.catalyst)ids.push('peroxide-catalyst');
 return ids;
 }
 export function detectRisks(input){

@@ -9,7 +9,7 @@ const shield='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-
 const triangle='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 3 10 18H2Z"/><path d="M12 9v5m0 3v1"/></svg>';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let sequence=0;
-const chats=[{id:++sequence,title:'Washing machine maintenance',messages:[],draft:''},{id:++sequence,title:'Living room clean-up',messages:[],draft:''},{id:++sequence,title:'Kitchen cleaning checklist',messages:[],draft:''}];
+const chats=[{id:++sequence,title:'No-Mix Zone',messages:[],draft:''}];
 let currentId=chats[0].id;
 let pending=null;
 let confirmStage=false;
