@@ -56,12 +56,3 @@ Upload changed files to their existing paths on `main`. With Pages configured to
 
 The public website address remains https://jayzhang-design.github.io/HAIS/ . A browser refresh may be needed after deployment.
 
-## Content references
-
-Evidence and wording decisions are documented separately:
-
-- [Chemical safety](docs/risk-catalogue.md)
-- [Digital and financial safety](docs/digital-safety.md)
-- [Food safety](docs/food-safety.md)
-- [Medical and pharmaceutical safety](docs/medical-safety.md)
-- [Fitness and injury safety](docs/fitness-safety.md)
