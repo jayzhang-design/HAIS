@@ -4,7 +4,7 @@ HAIS helps people pause and assess risk before acting on potentially unsafe advi
 
 The project translates findings from AI response evaluation into a practical interaction: a warning appears before the relevant reply, giving users a chance to reconsider the suggested action while staying focused on their original goal.
 
-[Open HAIS](https://jayzhang-design.github.io/HAIS/)
+[Open HAIS](https://jayzhang-design.github.io/HAIS/) https://jayzhang-design.github.io/HAIS/
 
 ## Safety categories
 
